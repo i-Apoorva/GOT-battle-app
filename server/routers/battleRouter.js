@@ -2,10 +2,6 @@ const express = require('express')
 const Battle= require('../models/battle.model')
 const router = new express.Router()
 
-router.get('/', (req,res)=>{
-    res.send('got battles site')
-})
-
 router.get('/list', async (req,res)=> {
     try {
         const list = await Battle.distinct('location',{"location":{$ne:null || ""}})
