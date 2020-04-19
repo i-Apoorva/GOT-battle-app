@@ -2,23 +2,10 @@ const express = require('express')
 const Battle= require('../models/battle.model')
 const router = new express.Router()
 
-//working
-router.get('/hello', (req,res)=>{
+router.get('/', (req,res)=>{
     res.send('got battles site')
 })
 
-//fetching all battles
-// router.get('/battles', async (req,res)=> {
-//    try{
-//     const battles = await Battle.find({})
-//     res.json(battles);
-
-//    }catch(e) {
-//       res.status(500).send()
-//    }
-// })
-
-//working
 router.get('/list', async (req,res)=> {
     try {
         const list = await Battle.distinct('location',{"location":{$ne:null || ""}})
@@ -37,7 +24,6 @@ router.get('/battles', async (req,res)=> {
    }
 })
 
-//working
 router.get('/count', async (req,res)=> {
    try{
      const count = await Battle.countDocuments({})
@@ -46,7 +32,6 @@ router.get('/count', async (req,res)=> {
       res.status(500).send()
    }
 })
-
 
 router.get('/search', async (req,res) =>{
   const {king, type, region, location, year, attacker, name} = req.query;
