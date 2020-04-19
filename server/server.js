@@ -1,11 +1,12 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const app  = express();
 var path = require('path');
 const battleRouter= require('./routers/battleRouter')
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8000
 const mongoose = require('mongoose')
-const DB_URL= "mongodb+srv://admin:admin@cluster0-faw0a.mongodb.net/test?retryWrites=true&w=majority";
+const DB_URL= process.env.DB_URL;
 
 mongoose.connect(DB_URL, {
     useNewUrlParser: true,
