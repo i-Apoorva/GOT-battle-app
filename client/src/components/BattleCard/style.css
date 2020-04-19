@@ -1,0 +1,66 @@
+.card-layout-container {
+  float: center;
+  width: 25%;
+  padding: 0 10px;
+  max-width: 80rem;
+  position: absolute;
+  left: 25%;
+  background-color: #696969;
+  
+}
+.card-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-color: #696969;
+}
+
+@media screen and (max-width: 600px) {
+  .card-layout-container {
+    width: 25%;
+    display: block;
+    margin-bottom: 20px;
+    background-color: #696969;
+  }
+}
+
+.card-styling {
+  background-color: #696969;
+}
+.card-title {
+  font-size: 30px;
+  text-align: center;
+  color: #E0FFFF;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fighter-name-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #708090;
+}
+
+.fighter-description {
+  text-align: center;
+  padding: 2rem;
+  color: #E0FFFF;
+}
+
+.fighter-image {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.fight-btn {
+  float: center;
+  border-radius: 12px;
+  font-weight: bold;
+  margin: 6px 4px;
+  background-color: #696969;
+  color: #00BFFF;
+  border-color: #00BFFF;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-width: medium;
+}
