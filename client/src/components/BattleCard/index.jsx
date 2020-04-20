@@ -49,7 +49,7 @@ export default function BattleCard({ warData }) {
   console.log('attacker image',attacker_img);
 
   return (
-    <div className="card-layout-container" style={{flexDirection:'row', flexShrink: 1}}>
+    <div className="card-layout-container">
     <div className="card-container">
       <div className="card-styling">
       <div className="card-header bg-transparent border-success">

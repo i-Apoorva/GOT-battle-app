@@ -1,11 +1,11 @@
 .card-layout-container {
   float: center;
   width: 25%;
-  padding: 0 10px;
-  max-width: 80rem;
+  padding: 0px 10px;
+  margin-right: 50px;
   position: absolute;
-  left: 25%;
   background-color: #696969;
+  right:50%;
   
 }
 .card-container {
@@ -17,15 +17,15 @@
 
 @media screen and (max-width: 600px) {
   .card-layout-container {
-    width: 25%;
+    width: 100%;
     display: block;
-    margin-bottom: 20px;
     background-color: #696969;
   }
 }
 
 .card-styling {
   background-color: #696969;
+  margin-right: 70px;
 }
 .card-title {
   font-size: 30px;
