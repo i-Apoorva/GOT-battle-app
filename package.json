@@ -20,7 +20,7 @@
     "@babel/plugin-proposal-class-properties": "^7.2.3",
     "@babel/plugin-transform-runtime": "^7.9.0",
     "@babel/runtime": "^7.9.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
